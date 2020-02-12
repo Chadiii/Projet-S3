@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+  version="3.0">
+  
+  												<!-- SERVLET  -->
+  
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>com.JavaEE.controller.HomePage</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>User1</servlet-name>
+    <servlet-class>web.ServletGestionDesUsers</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Home_Admin</servlet-name>
+    <servlet-class>web.ServletHomeAdmin</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>successController</servlet-name>
+    <servlet-class>com.JavaEE.controller.successController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>successController1</servlet-name>
+    <servlet-class>com.JavaEE.controller.successController1</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>Service</servlet-name>
+    <servlet-class>com.JavaEE.controller.ServicePage</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Contact</servlet-name>
+    <servlet-class>com.JavaEE.controller.ContactPage</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Team</servlet-name>
+    <servlet-class>com.JavaEE.controller.TeamPage</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>com.JavaEE.controller.SignUpController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ServletGestionDesAnnonces</servlet-name>
+	<servlet-class>web.ServletGestionDesAnnonces</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>ServletGestionDesReservations</servlet-name>
+	<servlet-class>web.ServletGestionDesReservations</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>ServletGestionDesModeles</servlet-name>
+	<servlet-class>web.ServletGestionDesModeles</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Demander</servlet-name>
+    <servlet-class>com.JavaEE.controller.DemanderController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.JavaEE.controller.ConnexionController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>showGood</servlet-name>
+    <servlet-class>com.JavaEE.controller.ShowGoodController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>showModel</servlet-name>
+    <servlet-class>com.JavaEE.controller.ShowModelController</servlet-class>
+  </servlet>
+  
+  <servlet>
+	<servlet-name>ContServlHome</servlet-name>
+	<servlet-class>web.ContServlHome</servlet-class>
+  </servlet>
+
+  <servlet>
+	<servlet-name>ControleurServlet</servlet-name>
+	<servlet-class>web.ControleurServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+	<servlet-name>ControlEStimer</servlet-name>
+	<servlet-class>web.ControlEStimer</servlet-class>
+  </servlet>
+  
+  												<!-- SERVLET MAPPING -->
+  
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>User1</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Home_Admin</servlet-name>
+    <url-pattern>/Home_Admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>successController</servlet-name>
+    <url-pattern>/successController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>successController1</servlet-name>
+    <url-pattern>/successController1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>showGood</servlet-name>
+    <url-pattern>/showGood</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>showModel</servlet-name>
+    <url-pattern>/showModel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Service</servlet-name>
+    <url-pattern>/Service</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/Contact</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Team</servlet-name>
+    <url-pattern>/Team</url-pattern>
+  </servlet-mapping>
+   
+  <servlet-mapping>
+    <servlet-name>Demander</servlet-name>
+    <url-pattern>/DemanderPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/connexion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ContServlHome</servlet-name>
+    <url-pattern>/homeoffreur</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>ControleurServlet</servlet-name>
+    <url-pattern>/controleur</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ControlEStimer</servlet-name>
+  	<url-pattern>/estimer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+	<servlet-name>ServletGestionDesAnnonces</servlet-name>
+	<url-pattern>/annonce</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+	<servlet-name>ServletGestionDesReservations</servlet-name>
+	<url-pattern>/reservation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+	<servlet-name>ServletGestionDesModeles</servlet-name>
+	<url-pattern>/reservation_model</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

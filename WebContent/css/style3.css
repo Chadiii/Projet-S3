@@ -1,0 +1,16 @@
+.list1 {
+float:left;
+background:#e6e6e6;
+  width:100px;
+  height:100px;
+  list-style-type:none;
+  margin:10px;
+}
+
+.list1 {
+counter-increment:shail;
+}
+
+.list1:after {
+  content:counter(shail);
+}
